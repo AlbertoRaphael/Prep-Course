@@ -92,10 +92,7 @@ function agregarMetodo() {
     return this.nombre + ", " + this.edad + " años";
   }
 }
-//  Persona.prototype.datos = function (){
-  //  return this.nombre + ", " + this.edad + "años";
-//  }
-//}
+
   
 
 // No modificar nada debajo de esta línea
