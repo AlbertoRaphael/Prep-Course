@@ -10,7 +10,10 @@
 
 function insertAndSort(array, obj) {
   // Tu código acá
-  
+  for(let prop in obj) {
+    array.push(obj[prop]);
+  }
+
 }
 
 //⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

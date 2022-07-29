@@ -19,6 +19,16 @@
 
 var restArray = function(array){
     // Tu código acá
+    let cantidadArrays = 0;
+    let sum = 0;
+    for(let i = 0; i < array.length; i++) {
+        if(Array.isArray(array[i])) {
+            sum += restArray(array[i]);
+            cantidadArrays++;
+        }
+        else sum += array[i];
+    }
+    return sum - cantidadArrays;
 
 }
 

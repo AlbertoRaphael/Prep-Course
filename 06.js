@@ -26,6 +26,8 @@ const { BinarySearchTree } = require("./DS");
 
 BinarySearchTree.prototype.searchMaxTwo = function () {
   // tu código acá:
+  if(this.right.right === null) return [this.right.value, this.value];
+  return this.right.searchMaxTwo();
 
 };
 
